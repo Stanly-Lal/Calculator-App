@@ -1,0 +1,216 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+}
+#container {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 50px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  padding: 2px 30px;
+  z-index: 100;
+}
+#container a {
+  color: white;
+  font-size: 27px;
+  margin-right: 30px;
+}
+#container a:hover {
+  color: aqua;
+  cursor: pointer;
+  transition: all 0.5s ease-in;
+}
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(8, 13, 16);
+}
+#main {
+  height: 420px;
+  width: 325px;
+  border: 2px solid grey;
+  box-shadow: 2px 2px 3px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+#display {
+  text-align: right;
+  overflow: hidden;
+  font-size: 3.2rem;
+  padding: 10px 5px;
+  height: 12%;
+  width: 95%;
+  margin-top: 9px;
+  background-color: rgba(126, 126, 91, 0.409);
+  border-radius: 5px;
+  border: 0.9px solid black;
+  box-shadow: 1px gray;
+}
+#display::placeholder {
+  color: rgb(19, 18, 18);
+  text-shadow: 0 0.5px 1px rgb(149, 144, 144);
+  font-family: Verdana, Geneva, Tahoma, sans-serif ;
+}
+#display:disabled {
+  color: rgb(19, 18, 18);
+  text-shadow: 0 0.5px 1px rgb(149, 144, 144);
+  font-family: Verdana, Geneva, Tahoma, sans-serif ;
+}
+#display:focus {
+    outline: none;
+}
+#clear {
+  width: 100%;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#ac-btn {
+  width: 95%;
+  height: 40px;
+  font-size: 25px;
+  background-color: rgba(255, 166, 0, 0.432);
+  border: 1px solid grey;
+  border-radius: 20px;
+  color: white;
+}
+#ac-btn:hover {
+  background-color: rgba(255, 166, 0, 0.518);
+}
+#ac-btn:active {
+  background-color: rgba(255, 166, 0, 0.675);
+}
+#result-btn {
+  font-size: 27px;
+  font-weight: 400;
+  color: black;
+  background-color: white;
+}
+#result-btn:hover {
+  background-color: rgba(255, 255, 255, 0.921);
+}
+#result-btn:active {
+  background-color: aliceblue;
+}
+.all-btn {
+  color: white;
+  width: 70px;
+  font-size: 25px;
+  font-weight: 100;
+  padding: 12px;
+  margin: 4px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: rgba(128, 128, 128, 0.538);
+  border: 0.2px solid rgba(255, 255, 255, 0.39);
+  box-shadow: 1px 1px 1px 1px rgba(6, 6, 7, 0.2);
+}
+.all-btn:hover {
+  cursor: pointer;
+  background-color: rgba(128, 128, 128, 0.347);
+}
+.all-btn:active {
+  background-color: rgba(128, 128, 128, 0.177);
+}
+.operator {
+  color: white;
+  width: 70px;
+  font-size: 25px;
+  font-weight: 100;
+  padding: 12px;
+  margin: 4px;
+  text-align: center;
+  border-radius: 50%;
+  text-shadow: 0 0.5px 1px black;
+  box-shadow: 1px 1px 1px 1px rgba(6, 6, 7, 0.2);
+  background-color: orange;
+  border: 0.4px solid black;
+}
+.operator:hover {
+  cursor: pointer;
+  background-color: rgba(255, 166, 0, 0.879);
+}
+.operator:active {
+  background-color: rgba(255, 166, 0, 0.759);
+}
+.main2 {
+  width: 100%;
+  max-height: 60%; 
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#col-two {
+  display: flex;
+  flex-wrap: wrap;
+}
+p {
+  color: white;
+  height: 9px;
+  font-weight: bold;
+}
+footer {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  height: 20px;
+  text-align: center;
+  color: white;
+  background-color: black;
+}
+
+@media (max-width: 319px) {
+  .all-btn {
+    width: 60px;
+    font-size: 25px;
+    margin: 6.5px;
+ }
+}
+
+@media (max-width: 299px) {
+  .all-btn {
+    width: 55px;
+    font-size: 25px;
+    margin: 6.5px;
+ }
+}
+
+@media (max-width: 279px) {
+  .all-btn {
+    width: 50px;
+    font-size: 25px;
+    margin: 6.5px;
+ }
+}
+
+@media (max-width: 259px) {
+  .all-btn {
+    width: 48px;
+    font-size: 23px;
+    margin: 5px;
+ }
+}
+
+@media (max-width: 239px) {
+  .all-btn {
+    width: 40px;
+    font-size: 23px;
+    margin: 6px;
+ }
+}
